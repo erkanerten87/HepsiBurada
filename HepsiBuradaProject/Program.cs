@@ -1,4 +1,5 @@
-﻿namespace HepsiBuradaProject
+﻿
+namespace HepsiBuradaProject
 {
     class Program
     {

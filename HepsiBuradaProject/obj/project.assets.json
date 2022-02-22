@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/erkanerten/Desktop/hepsiburada/hepsiburada.csproj",
+      "projectUniqueName": "/Users/erkanerten/Desktop/hepsiburada/HepsiBuradaProject/hepsiburada.csproj",
       "projectName": "hepsiburada",
-      "projectPath": "/Users/erkanerten/Desktop/hepsiburada/hepsiburada.csproj",
+      "projectPath": "/Users/erkanerten/Desktop/hepsiburada/HepsiBuradaProject/hepsiburada.csproj",
       "packagesPath": "/Users/erkanerten/.nuget/packages/",
-      "outputPath": "/Users/erkanerten/Desktop/hepsiburada/obj/",
+      "outputPath": "/Users/erkanerten/Desktop/hepsiburada/HepsiBuradaProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/erkanerten/.nuget/NuGet/NuGet.Config"
