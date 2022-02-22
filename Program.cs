@@ -4,8 +4,8 @@
     {
         static void Main(string[] args)
         {
-            var maxLocation =  Console.ReadLine();
-            var splittedLocation = maxLocation.Split(" ");
+            var maxCoordinates =  Console.ReadLine();
+            var splittedLocation = maxCoordinates.Split(" ");
             var maxX = splittedLocation[0];
             var maxY = splittedLocation[1];
             var currentLocation = string.Empty;
