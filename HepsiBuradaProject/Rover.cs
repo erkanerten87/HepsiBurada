@@ -9,7 +9,7 @@ namespace HepsiBuradaProject
 
         private int X,Y,MaxX,MaxY;
 
-        public Rover(string X,string Y, string MaxX, string MaxY, string direction){
+        public Rover(string X,string Y,string direction, string MaxX, string MaxY){
 
             this.X = Convert.ToInt32(X);
             this.Y = Convert.ToInt32(Y);
@@ -22,7 +22,13 @@ namespace HepsiBuradaProject
             this.currentDirection = directions[direction];
         }
 
-        public void Move(char move) {
+        public void MoveAll(string move) {
+              foreach(char oneMove in move){
+                    this.moveOne(oneMove);
+                }
+        }
+
+        private void moveOne(char move) {
 
             switch(move){
                 case 'L':

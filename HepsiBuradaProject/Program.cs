@@ -24,11 +24,9 @@ namespace HepsiBuradaProject
                 }
 
                 var locations =currentLocation.Split(" ");
-                Rover rover = new Rover(locations[0],locations[1],maxX,maxY,locations[2]);
-
-                foreach(char c in operations){
-                    rover.Move(c);
-                }
+                Rover rover = new Rover(locations[0],locations[1],locations[2],maxX,maxY);
+                rover.MoveAll(operations);
+              
                 roverList.Add(rover);
             }
             roverList.ForEach((rover) => Console.WriteLine(rover.GetLatestLocation()));
