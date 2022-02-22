@@ -9,6 +9,9 @@ namespace HepsiBuradaProject
             var splittedLocation = maxCoordinates.Split(" ");
             var maxX = splittedLocation[0];
             var maxY = splittedLocation[1];
+            var locationX = string.Empty;
+            var locationY = string.Empty;
+            var direction = string.Empty;
             var currentLocation = string.Empty;
             List<Rover> roverList = new List<Rover>();
             while (true) {
@@ -24,7 +27,10 @@ namespace HepsiBuradaProject
                 }
 
                 var locations =currentLocation.Split(" ");
-                Rover rover = new Rover(locations[0],locations[1],locations[2],maxX,maxY);
+                locationX = locations[0];
+                locationY = locations[1];
+                direction = locations[2];
+                Rover rover = new Rover(locationX,locationY,direction,maxX,maxY);
                 rover.MoveAll(operations);
               
                 roverList.Add(rover);

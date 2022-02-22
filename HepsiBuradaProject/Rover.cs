@@ -28,6 +28,10 @@ namespace HepsiBuradaProject
                 }
         }
 
+        public string GetLatestLocation() {
+            return string.Format("{0} {1} {2}", X,Y,Convert.ToString(currentDirection));
+        }
+
         private void moveOne(char move) {
 
             switch(move){
@@ -41,10 +45,6 @@ namespace HepsiBuradaProject
                   moveForward();
                   break;
             }
-        }
-
-        public string GetLatestLocation() {
-            return string.Format("{0} {1} {2}", X,Y,Convert.ToString(currentDirection));
         }
 
         private void moveForward() {
